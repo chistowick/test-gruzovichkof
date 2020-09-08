@@ -16,10 +16,10 @@ use App\Http\Controllers\RandomController;
 */
 
 // вывод id и сгенерированного числа
-Route::get('random/generate', 'RandomController@generate');
+Route::get('random/generate', 'RandomController@generate')->middleware('onwantsjson');
 
 // вывод сгенерированного числа и даты-времени генерации
-Route::get('random/retrieve/{id}', 'RandomController@retrieve');
+Route::get('random/retrieve/{id}', 'RandomController@retrieve')->middleware('onwantsjson');
 
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
