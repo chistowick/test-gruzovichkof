@@ -1,1 +1,9 @@
 /* Свои стили */
+
+#gen-result, #retr-result, #retrieve_error {
+    display: none;
+}
+
+#gen-text, #retr-text {
+    font-size: 1.5rem;
+}
